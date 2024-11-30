@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="stylish-heading">Digital Library</h1>
+        <nav>
+            <ul>
+                <li><a href="../BOOKS/books.html">Books</a></li>
+                <li><a href="../RESEARCH/research.html">Research Papers</a></li>
+                <li><a href="../MANGAS/Mangas.html">Mangas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button id="toggleAccount" class="toggle-button">View Account Info</button>
+        
+        <section id="hero">
+            <h2 class="Gold-pass_heading">Gold Pass</h2>
+            <p>Get Gold Pass For Perfect Experience.</p>
+            <a href="../GOLD PASS/gold.html" class="button">
+                Apply Now
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" 
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" 
+                          clip-rule="evenodd">
+                    </path>
+                </svg>
+            </a>
+        </section>
+        <section id="content">
+            <h3></h3>
+            <p></p>
+        </section>
+        <section id="section2">
+            <h3></h3>
+            <p></p>
+        </section>
+        <section id="section3">
+            <h3></h3>
+            <p></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FE MMCOE CE 2 Team 15</p>
+    </footer>
+
+    <!-- Account Info Modal -->
+    <div id="accountModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Account Details</h3>
+            <p id="usernameDisplay"></p>
+            <p id="addressDisplay"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
