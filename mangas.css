@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f7; /* Light blue background */
+    background-image: url('https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686968_KS9NVTJgvjMQs2FniVHyIJaAIcg5p7D0.jpg'); /* Replace with your image path */
+    background-size: cover; /* Make the background cover the entire body */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-position: center; /* Center the background image */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em; /* Increased font size */
+    color: #f8e404;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px; /* Spacing between letters */
+    margin-bottom: 20px; /* Spacing below the heading */
+    font-weight: bold; /* Bold font */
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px 15px;
+    border: 2px solid #333;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    outline: none; /* Remove default outline */
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow effect */
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #aaa; /* Placeholder color */
+    opacity: 1; /* Ensure opacity for better visibility */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between gallery items */
+}
+
+.gallery a {
+    display: inline-block;
+    width: calc(25% - 15px); /* Four images per row */
+    height: auto; /* Let height adjust based on the image aspect ratio */
+    text-decoration: none;
+    color: #fefcfc;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.name {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .gallery a {
+        width: calc(50% - 15px); /* Two images per row on medium screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery a {
+        width: calc(100% - 15px); /* One image per row on small screens */
+    }
+}
