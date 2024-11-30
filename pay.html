@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Option</title>
+    <link rel="stylesheet" href="gold.css"> <!-- Link to the CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .payment-method {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f1f1f1;
+        }
+        .payment-method img {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .action {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Payment Option</h1>
+        <div class="payment-method">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvE6-6odTOoKvuJjhWykmi7kblH7Ix9tjwjA&s" alt="Credit Card">
+            <span>PhonePe (QR)</span>
+        </div>
+        <div class="action">
+            <a href="confirm-payment.html" class="button">Proceed to Payment</a>
+        </div>
+    </div>
+
+</body>
+</html>
