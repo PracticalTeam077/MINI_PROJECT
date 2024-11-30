@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="management.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Management</h1>
+        <input type="text" id="searchInput" placeholder="Search for books..." onkeyup="searchBooks()">
+        
+        <div class="button-container">
+            <div class="button-group">
+                <button id="openAddBookModalBtn" type="button">Add Book</button>
+                <button id="openRemoveModalBtn" type="button">Remove a Book</button>
+            </div>
+            <div class="button-group">
+                <button id="openBorrowModalBtn" type="button">Borrow a Book</button>
+                <button id="openReturnModalBtn" type="button">Return a Book</button>
+            </div>
+        </div>
+        
+        <h2>Books List</h2>
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Status</th>
+                    <th>Borrower Details</th>
+                </tr>
+            </thead>
+            <tbody id="bookList"></tbody>
+        </table>
+    </div>
+
+    <!-- Add Book Modal -->
+    <div id="addBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add a Book</h2>
+            <form id="bookForm">
+                <div>
+                    <label for="bookName">Book Name:</label>
+                    <input type="text" id="bookName" required>
+                </div>
+                <div>
+                    <label for="authorName">Author's Name:</label>
+                    <input type="text" id="authorName" required>
+                </div>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Borrow Book Modal -->
+    <div id="borrowModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Borrow a Book</h2>
+            <form id="borrowForm">
+                <div>
+                    <label for="borrowId">Enter Book ID:</label>
+                    <input type="number" id="borrowId" required>
+                </div>
+                <div>
+                    <label for="borrowerName">Borrower's Name:</label>
+                    <input type="text" id="borrowerName" required>
+                </div>
+                <div>
+                    <label for="borrowerAddress">Borrower's Address:</label>
+                    <input type="text" id="borrowerAddress" required>
+                </div>
+                <div>
+                    <label for="borrowerPhone">Borrower's Phone:</label>
+                    <input type="tel" id="borrowerPhone" required>
+                </div>
+                <button type="submit">Borrow Book</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Remove Book Modal -->
+    <div id="removeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Remove a Book</h2>
+            <form id="removeForm">
+                <div>
+                    <label for="removeId">Enter Book ID:</label>
+                    <input type="number" id="removeId" required>
+                </div>
+                <button type="submit">Remove Book</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Return Book Modal -->
+    <div id="returnModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Return a Book</h2>
+            <form id="returnForm">
+                <div>
+                    <label for="returnId">Enter Book ID:</label>
+                    <input type="number" id="returnId" required>
+                </div>
+                <button type="submit">Return Book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="management.js"></script>
+</body>
+</html>
