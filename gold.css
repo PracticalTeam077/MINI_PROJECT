@@ -1,0 +1,140 @@
+body {
+    background: url('https://th.bing.com/th/id/R.cb3ea77bc303d8e379aca0c0916cafac?rik=Y6DYZIYKjjA3ag&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fa%2f9%2f2%2f29702.jpg&ehk=XzBkKN86zXbM%2fLyfdNITGljJEUEH%2blam0UL%2btdeZRA8%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed; /* Add your background image */
+    background-size: cover; /* Ensure it covers the entire page */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center; /* Center-align the content */
+    margin: 20px; /* Space around the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+
+.plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for the plan */
+    color: #697e91;
+    max-width: 300px;
+    margin: 20px auto; /* Center the plan within the container */
+    position: relative;
+}
+
+.plan strong {
+    font-weight: 600;
+    color: #425275;
+}
+
+.plan .inner {
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #bed6fb;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #425475;
+}
+
+.plan .pricing small {
+    color: #707a91;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+}
+
+.plan .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #425675;
+}
+
+.plan .title + * {
+    margin-top: 0.75rem;
+}
+
+.plan .info + * {
+    margin-top: 1rem;
+}
+
+.plan .features {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plan .features li + * {
+    margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.plan .features + * {
+    margin-top: 1.25rem;
+}
+
+.plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.plan .button {
+    background-color: #6558d3;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+    cursor: pointer; /* Add a pointer cursor */
+}
+
+.plan .button:hover,
+.plan .button:focus {
+    background-color: #4133B7;
+}
